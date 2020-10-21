@@ -128,10 +128,13 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# NSC Data, Acad Semester data, student data
+# DS_Store, idea
+.DS_Store
+.idea/
+
+# NSC Data, Acad Semester data, student data, DataLoader results
 data/
 NSC_Return.csv
-students.csv
-student.csv
-academic_semesters.csv
-academic_semester.csv
+error*.csv
+success*.csv
+creds.py
