@@ -1,0 +1,24 @@
+#Mapping values
+#Sat Apr 04 13:41:52 EDT 2020
+Academic\ Semester\ Name=Name
+College\ Code/Branch=College_Code_Branch__c
+Search\ Date=Search_Date__c
+Enrollment\ CIP\ 2=Enrollment_CIP_2__c
+Period=CoFo_SIS__Period__c
+Public\ /\ Private=Public_Private__c
+Enrollment\ End=Enrollment_End__c
+2-year\ /\ 4-year=X2_Year_4_Year__c
+Record\ Found\ Y/N=Record_Found_Y_N__c
+Record\ Type=RecordTypeId
+Graduated?=Graduated__c
+Enrollment\ Major\ 2=Enrollment__c
+Enrollment\ Major\ 1=Enrollment_Major_1__c
+Class\ Level=Class_Level__c
+School\:\ Account\ ID=CoFo_SIS__School__c
+Student\:\ Contact\ ID=CoFo_SIS__Student__c
+Enrollment\ Begin=CoFo_SIS__Academic_Year_Start_Date__c
+Enrollment\ Status=CoFo_SIS__Current_Enrollment_Status__c
+Enrollment\ CIP\ 1=Enrollment_CIP_1__c
+Data\ Source=Data_Source__c
+College\ Sequence=College_Sequence__c
+Requester\ Return\ Field=Request_Returned_Field__c
