@@ -1,4 +1,40 @@
+from collections import OrderedDict
+
+import pandas as pd
 import numpy as np
+
+def extract_record(d):
+    '''
+
+    '''
+    record = []
+    cols = []
+    for var in d:
+        if var not in ['attributes', 'url']:  # Skip the unnecessary attributes and url data
+            subitem = d.get(var)
+            if type(subitem) == OrderedDict:
+                for subvar in subitem:
+                    if subvar not in ['attributes', 'url']:
+                        record.append(subitem.get(subvar))
+                        cols.append(f'{var} {subvar}')
+            else:
+                record.append((d.get(var)))
+                cols.append(var)
+    return record, cols
+
+def salesforce_to_dataframe(response):
+    '''
+    Given an ordered dict returned from the Salesforce API, return a pandas data frame with the data.
+    '''
+    arr = []
+    for item in response.get('records'): # Build a list containing the data for this individual record
+        record, cols = extract_record(item)
+        arr.append(record) # Append the list to the arr list
+    # vars = response.get('records')[0].keys() # Get the keys for column names
+    # vars = list(vars)
+    # vars.remove('attributes')
+    df = pd.DataFrame.from_records(arr, columns=cols)
+    return df
 
 def year_to_period(date):
     '''
