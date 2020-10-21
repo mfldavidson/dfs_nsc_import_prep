@@ -1,0 +1,10 @@
+#Mapping values
+#Sat Apr 04 19:49:06 EDT 2020
+Graduation\ Date=CoFo_SIS__Graduation_Date__c
+Degree\ Title=Name
+Degree\ CIP\ 1=Degree_CIP_1__c
+Degree\ Major\ 1=Degree_Major_1__c
+Degree\ Type=CoFo_SIS__Degree_Type__c
+School\:\ Account\ ID=CoFo_SIS__School__c
+Student\:\ Contact\ ID=CoFo_SIS__Student__c
+Data\ Source=Data_Source__c
