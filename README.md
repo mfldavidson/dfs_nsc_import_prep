@@ -43,7 +43,12 @@ the command `pip install -r requirements.txt`.
 kernelspec dfs_nsc in [path]`. Then enter `jupyter notebook`. In the window 
 that opens, click on the `ipynb` file. Select Kernel>Change kernel>dfs_nsc.
 
+1. Create a folder in `dfs_nsc_import_prep` named `data`.
+
 ## Running the Program
+
+1. Put the file returned from the NSC in the `data` folder and name it 
+`NSC_Return.csv`.
 
 1. Ensure you are in the `dfs_nsc_import_prep` directory in your command line.
 
@@ -52,3 +57,6 @@ that opens, click on the `ipynb` file. Select Kernel>Change kernel>dfs_nsc.
 1. In the window that opens, click on the `ipynb` file.
 
 1. Click Cells>Run All.
+
+1. Take the two output files and upload them in DataLoader using the mappings
+in `data_loader_files`.
