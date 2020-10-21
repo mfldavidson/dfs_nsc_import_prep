@@ -5,7 +5,7 @@ import numpy as np
 
 def extract_record(d):
     '''
-
+    Given an OrderedDict, extract the records and return a list of attributes and a list of columns.
     '''
     record = []
     cols = []
